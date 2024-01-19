@@ -6,8 +6,12 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div className="container-fluid">
         {/* This will contain a link to the home page */}
-        <NavLink to="/" className="navbar-brand" >
-          Navbar
+        <img src="./Assets/WhatsApp Image 2024-01-17 at 23.13.50_4d5d9ca1.jpg" 
+        alt="gatundia icon"
+        style={{height: "5rem"}}
+        />
+        <NavLink to="*" className="navbar-brand" >
+          Gatundia Concrete 
         </NavLink>
         <button
           className="navbar-toggler"
@@ -24,7 +28,7 @@ function Navbar() {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
                 {/* This will contain a link to the home page */}
-              <NavLink to="/" className="nav-link active" aria-current="page" >
+              <NavLink to="*" className="nav-link active" aria-current="page" >
                 Home
               </NavLink>
             </li>

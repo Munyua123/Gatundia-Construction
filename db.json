@@ -1,0 +1,116 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "./Assets/IMG-20231222-WA0002.jpg",
+      "product": "Product1",
+      "Price": 300
+    },
+    {
+      "image": "./Assets/IMG-20231222-WA0003.jpg",
+      "product": "Product2",
+      "Price": 250,
+      "id": 2
+    },
+    {
+      "image": "./Assets/IMG-20231222-WA0004.jpg",
+      "product": "Product3",
+      "Price": 200,
+      "id": 3
+    },
+    {
+      "image": "./Assets/IMG-20231222-WA0005.jpg",
+      "product": "Product4",
+      "Price": 500,
+      "id": 4
+    },
+    {
+      "image": "./Assets/IMG-20231222-WA0006.jpg",
+      "product": "Product5",
+      "Price": 200,
+      "id": 5
+    },
+    {
+      "image": "./Assets/IMG-20231222-WA0007.jpg",
+      "product": "Product6",
+      "Price": 300,
+      "id": 6
+    },
+    {
+      "image": "./Assets/IMG-20231222-WA0008.jpg",
+      "product": "Product7",
+      "Price": 250,
+      "id": 7
+    },
+    {
+      "image": "./Assets/IMG-20231223-WA0001.jpg",
+      "product": "Product8",
+      "Price": 550,
+      "id": 8
+    },
+    {
+      "image": "./Assets/IMG-20231223-WA0002.jpg",
+      "product": "Product9",
+      "Price": 350,
+      "id": 9
+    },
+    {
+      "image": "./Assets/IMG-20231223-WA0003.jpg",
+      "product": "Product10",
+      "Price": 100,
+      "id": 10
+    },
+    {
+      "image": "./Assets/IMG-20231223-WA0004.jpg",
+      "product": "Product11",
+      "Price": 260,
+      "id": 11
+    },
+    {
+      "image": "./Assets/IMG-20231223-WA0005.jpg",
+      "product": "Product12",
+      "Price": 380,
+      "id": 12
+    },
+    {
+      "image": "./Assets/IMG-20231223-WA0006.jpg",
+      "product": "Product13",
+      "Price": 267,
+      "id": 13
+    },
+    {
+      "image": "./Assets/IMG-20231223-WA0007.jpg",
+      "product": "Product14",
+      "Price": 387,
+      "id": 14
+    },
+    {
+      "image": "./Assets/IMG-20231223-WA0008.jpg",
+      "product": "Product15",
+      "Price": 637,
+      "id": 15
+    },
+    {
+      "image": "./Assets/IMG-20231223-WA0009.jpg",
+      "product": "Product16",
+      "Price": 150,
+      "id": 16
+    },
+    {
+      "image": "./Assets/IMG-20231223-WA0010.jpg",
+      "product": "Product17",
+      "Price": 200,
+      "id": 17
+    }
+  ],
+  "contacts": [
+    {
+      "firstname": "Samuel",
+      "email": "samuelmunyua@gmail.com",
+      "phonenumbers": "0717029229",
+      "reason": "buyingProducts",
+      "descriptions": "How much quantity does it porductName come with",
+      "id": 1
+    }
+  ]
+}
