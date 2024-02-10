@@ -16,7 +16,7 @@ function Contact({
         border: "solid black 2px",
         padding: "1rem",
         marginTop: "2rem",
-        width: "30rem"
+        width: "27rem"
       }}
     >
       <form onSubmit={handlesubmit}>
