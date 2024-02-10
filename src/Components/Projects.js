@@ -3,7 +3,9 @@ import React from "react";
 function Projects() {
   return (
     <div>
-      <h2>PROJECTS</h2>
+      <h2 style={{textAlign: 'center'}}>
+        PROJECTS
+        </h2>
       <h4>
         Here is a list of the projects that our company has been involved in:{" "}
       </h4>

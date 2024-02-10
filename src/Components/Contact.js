@@ -1,15 +1,22 @@
 import React from "react";
 
 function Contact({
-  firstname,email,phonenumbers,reason,descriptions,handlesubmit,handlechange
+  firstname,
+  email,
+  phonenumbers,
+  reason,
+  descriptions,
+  handlesubmit,
+  handlechange,
 }) {
   return (
     <div
+    className="mx-auto d-block"
       style={{
         border: "solid black 2px",
-        width: "50%",
-        margin: "auto",
         padding: "1rem",
+        marginTop: "2rem",
+        width: "30rem"
       }}
     >
       <form onSubmit={handlesubmit}>
@@ -18,12 +25,12 @@ function Contact({
           <label htmlFor="firstname" className="form-label">
             Name
           </label>
-          <input 
-          type="text" 
-          className="form-control" 
-          id="firstname" 
-          value={firstname}
-          onChange={handlechange}
+          <input
+            type="text"
+            className="form-control"
+            id="firstname"
+            value={firstname}
+            onChange={handlechange}
           />
         </div>
         <div className="mb-3">
@@ -46,21 +53,21 @@ function Contact({
           <label htmlFor="phonenumber" className="form-label">
             Telephone Number
           </label>
-          <input 
-          type="number" 
-          className="form-control" 
-          id="phonenumbers" 
-          value={phonenumbers}
-          onChange={handlechange}
+          <input
+            type="number"
+            className="form-control"
+            id="phonenumbers"
+            value={phonenumbers}
+            onChange={handlechange}
           />
         </div>
         <div className="mb-3">
-          <select 
-          id="reason"
-          className="form-select" 
-          aria-label="Default select example"
-          value={reason}
-          onChange={handlechange}
+          <select
+            id="reason"
+            className="form-select"
+            aria-label="Default select example"
+            value={reason}
+            onChange={handlechange}
           >
             <option value="">Reason for Enquiry</option>
             <option value="buyingProducts">Buying Products</option>
@@ -82,8 +89,8 @@ function Contact({
         </div>
         <button
           type="submit"
-          className="btn btn-primary"
-          style={{ width: "7rem", marginBottom: "5px", marginLeft: "5rem" }}
+          className="btn btn-primary mx-auto d-block"
+          style={{ width: "7rem", marginBottom: "5px" }}
         >
           Submit
         </button>

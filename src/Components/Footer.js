@@ -2,18 +2,27 @@ import React from "react";
 
 function Footer() {
   return (
-    <div style={{ marginTop: "2rem", border: "2px solid" }}>
+    <div 
+    style={{ 
+      marginTop: "2rem", 
+      border: "2px solid"
+      }}>
       {/* this will be the company Logo */}
       <div>
         <img
-          src="./Assets/WhatsApp Image 2024-01-17 at 23.13.50_4d5d9ca1.jpg"
-          alt=""
+          src='./assets/gatundia.png'
+          alt="gatundia logo"
           style={{ height: "15rem", marginTop: "1rem", marginBottom: "1rem" }}
         />
         <h3>GATUNDIA CONCRETE LIMITED</h3>
       </div>
       {/* This will be the socials place */}
-      <div className="icons" style={{ color: "black" }}>
+      <div className="icons" 
+      style={{
+        display: "flex",
+        justifyContent: "flex-end"
+      }}
+      >
         <a href="tel: +254721953823">
           <i className="fa-solid fa-phone" style={{ paddingLeft: "1rem" }}></i>
         </a>

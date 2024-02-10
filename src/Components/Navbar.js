@@ -3,15 +3,14 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav
+      className="navbar navbar-expand-lg bg-body-tertiary"
+      data-bs-theme="dark"
+      style={{ marginBottom: "1rem" }}
+    >
       <div className="container-fluid">
-        {/* This will contain a link to the home page */}
-        <img src="./Assets/WhatsApp Image 2024-01-17 at 23.13.50_4d5d9ca1.jpg" 
-        alt="gatundia icon"
-        style={{height: "5rem"}}
-        />
-        <NavLink to="*" className="navbar-brand" >
-          Gatundia Concrete 
+        <NavLink to="/" className="navbar-brand">
+          Gatundia Concrete
         </NavLink>
         <button
           className="navbar-toggler"
@@ -27,26 +26,26 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-                {/* This will contain a link to the home page */}
-              <NavLink to="*" className="nav-link active" aria-current="page" >
+              {/* This will contain a link to the home page */}
+              <NavLink to="/" className="nav-link active" aria-current="page">
                 Home
               </NavLink>
             </li>
             <li className="nav-item">
-                {/* This will contain a link to the projects page */}
-              <NavLink to="/projects" className="nav-link" >
+              {/* This will contain a link to the projects page */}
+              <NavLink to="/projects" className="nav-link">
                 Projects
               </NavLink>
             </li>
             <li className="nav-item">
-                {/* This will contain a link to the products page */}
-              <NavLink to="/products" className="nav-link" >
+              {/* This will contain a link to the products page */}
+              <NavLink to="/products" className="nav-link">
                 Products
               </NavLink>
             </li>
             <li className="nav-item">
-                {/* This will contain a link to the hiring page */}
-              <NavLink to="/hiring" className="nav-link" >
+              {/* This will contain a link to the hiring page */}
+              <NavLink to="/hiring" className="nav-link">
                 Hiring
               </NavLink>
             </li>
@@ -68,5 +67,4 @@ function Navbar() {
   );
 }
 
-
-export default Navbar
+export default Navbar;

@@ -1,4 +1,5 @@
 import React from "react";
+import './App.css';
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Projects from "./Components/Projects";
@@ -59,11 +60,17 @@ function App() {
       .then((data) => setProductData(data));
   }, []);
   return (
-    <>
+    <div
+    style={{
+      backgroundColor: "black",
+      color: "white",
+      fontFamily: 'Lora, serif'
+    }}
+    >
       {/* <div className={containerClassName}> */}
       <Navbar />
       <Routes>
-        <Route path="*" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/products" element={<Products product={productData} />} />
         <Route path="/hiring" element={<Hiring />} />
@@ -83,13 +90,8 @@ function App() {
         />
       </Routes>
       {/* </div> */}
-    </>
+    </div>
   );
 }
 
 export default App;
-
-// /* <label>
-//   Dark Mode
-//   <input type="checkbox" checked={darkMode} onChange={handleToggle} />
-// </label> */

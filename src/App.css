@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+@media (min-width:1200px) {
+  .navbar-collapse {
+    margin-left: 12rem;
+  }
+  }

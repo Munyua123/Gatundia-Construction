@@ -6,8 +6,9 @@ import Contact from "./Contact";
 
 function Home() {
   return (
-    <>
-      <h2>Welcome to Gatundia Concrete</h2>
+    <div>
+      <h2 style={{textAlign: "center"}}>Welcome to Gatundia Concrete</h2>
+      <Carousels />
       <p>
         Discover the strength beneath your projects with Gatundia Concrete, your
         trusted partner in quality concrete solutions. Nestled in the heart of
@@ -21,7 +22,6 @@ function Home() {
         project, our commitment to excellence ensures that your vision takes
         shape with strength and durability.
       </p>
-      <Carousels />
       <p>
         Explore our range of premium concrete products, backed by a legacy of
         reliability and a promise of innovation. From concept to construction,
@@ -34,7 +34,7 @@ function Home() {
       <Contact />
       {/* it will have a small about us  */}
       <Footer />
-    </>
+    </div>
   );
 }
 
