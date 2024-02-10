@@ -16,7 +16,7 @@ function Contact({
         border: "solid black 2px",
         padding: "1rem",
         marginTop: "2rem",
-        width: "27rem"
+        width: "25rem"
       }}
     >
       <form onSubmit={handlesubmit}>
@@ -31,6 +31,7 @@ function Contact({
             id="firstname"
             value={firstname}
             onChange={handlechange}
+            placeholder="Enter ryour name"
           />
         </div>
         <div className="mb-3">
@@ -59,6 +60,7 @@ function Contact({
             id="phonenumbers"
             value={phonenumbers}
             onChange={handlechange}
+            placeholder="Enter your phonenumber"
           />
         </div>
         <div className="mb-3">
@@ -85,6 +87,7 @@ function Contact({
             rows="3"
             value={descriptions}
             onChange={handlechange}
+            placeholder="Enter a description of your request/review"
           ></textarea>
         </div>
         <button
