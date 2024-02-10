@@ -3,16 +3,18 @@ import React from "react";
 function Products({ product }) {
   const displayData = product.map((item) => {
     return (
-      <div 
-      className="card" 
-      style={{ 
-        width: "18rem" ,
-        marginTop: "2rem"
-      }}>
+      <div
+        className="card"
+        style={{
+          width: "18rem",
+          marginTop: "2rem",
+        }}
+      >
         <div
           id="carouselExampleInterval"
           className="carousel slide"
           data-bs-ride="carousel"
+          style={{ paddingTop: "1rem" }}
         >
           <div className="carousel-inner">
             <div className="carousel-item active" data-bs-interval="10000">
@@ -22,7 +24,7 @@ function Products({ product }) {
                 alt="..."
               />
             </div>
-            <div className="carousel-item" data-bs-interval="2000">
+            <div className="carousel-item active" data-bs-interval="2000">
               <img
                 src={item.image2}
                 className="card-img-top d-block w-100"
@@ -56,13 +58,17 @@ function Products({ product }) {
           </button>
         </div>
         <div className="card-body">
-          <h5 style={{textAlign: "center"}} className="card-title"><strong>{item.productname}</strong></h5>
+          <h5 style={{ textAlign: "center" }} className="card-title">
+            <strong>{item.productname}</strong>
+          </h5>
           <p className="card-text">{item.description1}</p>
           <p className="card-text">{item.description2}</p>
           <p className="card-text">{item.description3}</p>
           <p className="card-text">{item.description4}</p>
           <p className="card-text">{item.description5}</p>
-          <button className="btn btn-primary">Add To cart</button>
+          <button className="btn btn-primary mx-auto d-block">
+            Add To cart
+          </button>
         </div>
       </div>
     );
@@ -71,12 +77,12 @@ function Products({ product }) {
   return (
     <div>
       <h4>Here is a list of the materials that are available for sale: </h4>
-      <div 
-      className="row"
-      style={{
-        display: "flex",
-        justifyContent: "space-around"
-      }}
+      <div
+        className="row"
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+        }}
       >
         {displayData}
       </div>

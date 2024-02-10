@@ -17,10 +17,12 @@ function Footer() {
         <h3>GATUNDIA CONCRETE LIMITED</h3>
       </div>
       {/* This will be the socials place */}
-      <div className="icons" 
+      <div 
+      className="icons" 
       style={{
         display: "flex",
-        justifyContent: "flex-end"
+        justifyContent: "flex-end",
+        marginRight: "2rem"
       }}
       >
         <a href="tel: +254721953823">
@@ -50,13 +52,6 @@ function Footer() {
           <i className="fa-brands fa-whatsapp" style={{ paddingLeft: "1rem" }}>
           </i>
         </a>
-        {/* GOOGLE MAPS LOCATION */}
-        {/* <a>
-          <i
-            className="fa-solid fa-map-pin"
-            style={{ paddingLeft: "1rem" }}
-          ></i>
-        </a> */}
       </div>
     </div>
   );

@@ -31,7 +31,7 @@ function Contact({
             id="firstname"
             value={firstname}
             onChange={handlechange}
-            placeholder="Enter ryour name"
+            placeholder="Enter your name"
           />
         </div>
         <div className="mb-3">
@@ -79,7 +79,7 @@ function Contact({
         </div>
         <div className="mb-3">
           <label htmlFor="descriptions" className="form-label">
-            Example textarea
+            Description of Enquiry
           </label>
           <textarea
             className="form-control"
