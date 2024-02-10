@@ -1,7 +1,9 @@
 import React from "react";
 
 function Products({ product }) {
-  const displayData = product.map((item) => {
+  const displayData = product.map((item, index) => {
+    const carouselId = `carouselExample${index}`;
+
     return (
       <div
         className="card"
@@ -9,22 +11,22 @@ function Products({ product }) {
           width: "18rem",
           marginTop: "2rem",
         }}
+        key={index}
       >
         <div
-          id="carouselExampleInterval"
+          id={carouselId}
           className="carousel slide"
-          data-bs-ride="carousel"
           style={{ paddingTop: "1rem" }}
         >
           <div className="carousel-inner">
-            <div className="carousel-item active" data-bs-interval="10000">
+            <div className="carousel-item active">
               <img
                 src={item.image1}
                 className="card-img-top d-block w-100"
                 alt="..."
               />
             </div>
-            <div className="carousel-item active" data-bs-interval="2000">
+            <div className="carousel-item">
               <img
                 src={item.image2}
                 className="card-img-top d-block w-100"
@@ -35,7 +37,7 @@ function Products({ product }) {
           <button
             className="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselExampleInterval"
+            data-bs-target={`#${carouselId}`}
             data-bs-slide="prev"
           >
             <span
@@ -47,7 +49,7 @@ function Products({ product }) {
           <button
             className="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExampleInterval"
+            data-bs-target={`#${carouselId}`}
             data-bs-slide="next"
           >
             <span

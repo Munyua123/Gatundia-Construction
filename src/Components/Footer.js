@@ -5,7 +5,7 @@ function Footer() {
     <div 
     style={{ 
       marginTop: "2rem", 
-      border: "2px solid"
+      border: "2px solid",
       }}>
       {/* this will be the company Logo */}
       <div>
