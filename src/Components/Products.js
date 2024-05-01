@@ -1,6 +1,6 @@
 import React from "react";
 
-function Products({ product }) {
+function Products({ product, loading }) {
   const displayData = product.map((item, index) => {
     const carouselId = `carouselExample${index}`;
 
@@ -68,13 +68,24 @@ function Products({ product }) {
           <p className="card-text">{item.description3}</p>
           <p className="card-text">{item.description4}</p>
           <p className="card-text">{item.description5}</p>
-          <button className="btn btn-primary mx-auto d-block">
-            Add To cart
-          </button>
         </div>
       </div>
     );
   });
+
+  if (displayData.length === 0) {
+    return (
+      <div className="products">
+        <h2> No Products at the momment </h2>
+      </div>
+    );
+  }
+
+  if (loading) {
+    <div className="products">
+      <h2>Loading ...</h2>
+    </div>
+  }
 
   return (
     <div>

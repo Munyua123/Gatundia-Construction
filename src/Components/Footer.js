@@ -7,16 +7,9 @@ function Footer() {
       marginTop: "2rem", 
       border: "2px solid",
       }}>
-      {/* this will be the company Logo */}
       <div>
-        <img
-          src='./assets/gatundia.png'
-          alt="gatundia logo"
-          style={{ height: "15rem", marginTop: "1rem", marginBottom: "1rem" }}
-        />
         <h3>GATUNDIA CONCRETE LIMITED</h3>
       </div>
-      {/* This will be the socials place */}
       <div 
       className="icons" 
       style={{

@@ -5,69 +5,57 @@ function Carousels() {
   return (
     <div
       id="carouselExampleInterval"
-      class="carousel slide"
+      className="carousel slide"
       data-bs-ride="carousel"
       style={{ marginBottom: "1rem" }}
     >
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3000">
+      <div className="carousel-inner" style={{width: "800px", margin: "0 auto"}}>
+        <div className="carousel-item active" data-bs-interval="3000">
           <img
             src="./assets/gatundia.png"
-            class="d-block w-100"
+            className="d-block w-100"
             alt="..."
-            style={{ height: "28rem" }}
           />
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img 
-          src="./assets/truckimage1.jpg" 
-          class="d-block w-100" 
-          alt="..." 
-          style={{ height: "28rem" }}
+        <div className="carousel-item" data-bs-interval="2000">
+          <img
+            src="./assets/truckimage1.jpg"
+            className="d-block w-100"
+            alt="..."
           />
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img 
-          src="./assets/project1.jpg" 
-          class="d-block w-100" 
-          alt="..." 
-          style={{ height: "28rem" }}
+        <div className="carousel-item" data-bs-interval="2000">
+          <img
+            src="./assets/projects2.jpg"
+            className="d-block w-100"
+            alt="..."
           />
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img 
-          src="./assets/projects2.jpg" 
-          class="d-block w-100" 
-          alt="..." 
-          style={{ height: "28rem" }}
-          />
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img 
-          src="./assets/project3.jpg" 
-          class="d-block w-100" 
-          alt="..." 
-          style={{ height: "28rem" }}
+        <div className="carousel-item" data-bs-interval="2000">
+          <img
+            src="./assets/project3.jpg"
+            className="d-block w-100"
+            alt="..."
           />
         </div>
       </div>
       <button
-        class="carousel-control-prev"
+        className="carousel-control-prev"
         type="button"
         data-bs-target="#carouselExampleInterval"
         data-bs-slide="prev"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
       </button>
       <button
-        class="carousel-control-next"
+        className="carousel-control-next"
         type="button"
         data-bs-target="#carouselExampleInterval"
         data-bs-slide="next"
       >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
       </button>
     </div>
   );

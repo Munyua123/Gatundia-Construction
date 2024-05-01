@@ -37,8 +37,18 @@
   }
 }
 
-@media (min-width:1200px) {
-  .navbar-collapse {
+@media (min-width: 1200px) {
+  .middle {
     margin-left: 12rem;
   }
+  .last{
+    margin-left: 14rem;
   }
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+}

@@ -1,14 +1,13 @@
 import React from "react";
 import Carousels from "./Carousel";
 import Footer from "./Footer";
-import { Route, Routes } from "react-router-dom";
-import Contact from "./Contact";
+import Partners from "./Partners";
 
 function Home() {
   return (
     <div>
-      <h2 style={{textAlign: "center"}}>Welcome to Gatundia Concrete</h2>
       <Carousels />
+      <div style={{width: "68rem", marginLeft: "3.5rem"}}>
       <p>
         Discover the strength beneath your projects with Gatundia Concrete, your
         trusted partner in quality concrete solutions. Nestled in the heart of
@@ -28,11 +27,9 @@ function Home() {
         Gatundia Concrete is your foundation for success. Build with confidence.
         Build with Gatundia Concrete.
       </p>
-      <Routes>
-        <Route path="/contacts" element={<Contact />} />
-      </Routes>
-      <Contact />
       {/* it will have a small about us  */}
+      {/* <Partners /> */}
+      </div>
       <Footer />
     </div>
   );
