@@ -10,15 +10,14 @@ function Contact() {
   return (
     <div>
       <h2 style={{ textAlign: "center" }}>Contact Us</h2>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div className="contacts">
         <div
           style={{
-            border: "solid black 2px",
             padding: "1rem",
             marginTop: "2rem",
-            width: "25rem",
-            marginLeft: "4rem",
+            width: "20rem",
           }}
+          className="contactform"
         >
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
@@ -104,12 +103,11 @@ function Contact() {
         <div
           style={{
             border: "2px solid",
-            width: "28rem",
-            height: "12rem",
-            marginRight: "10rem",
+            width: "23rem",
+            height: "14rem",
             padding: "2rem",
-            marginTop: "10rem",
           }}
+          className="contactinfo"
         >
           <p>Telephone: +254721953823</p>
           <p>Email: Gatundiaconcretelimited@gmail.com</p>
@@ -119,7 +117,8 @@ function Contact() {
           </p>
         </div>
       </div>
-      <div style={{ width: "30rem", height: "16rem", marginLeft: "30rem" }}>
+      <div style={{ width: "23rem", height: "16rem", marginTop: "3rem"}} className="mx-auto d-block">
+        <h2 style={{textAlign: "center"}}>Google Location</h2>
         <a
           href="https://www.google.com/maps/place/Gatundia+Concrete+Crushing+Plant/@0.2288191,36.4592979,15.79z/data=!4m6!3m5!1s0x1787737f83efce35:0x5de2ebcd74987a12!8m2!3d0.227301!4d36.4627878!16s%2Fg%2F11ll9vc1p2?entry=ttu"
           target="_blank"
@@ -128,7 +127,8 @@ function Contact() {
           <img
             src="./assets/2024-05-01 (3).png"
             alt="Google Maps"
-            width="400rem"
+            width="370rem"
+            className="maps mx-auto d-block"
           />
         </a>
       </div>

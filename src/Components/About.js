@@ -1,10 +1,11 @@
 import React from "react";
+import Footer from "./Footer";
 
 function About() {
   return (
     <div>
       <h1 style={{ textAlign: "center" }}>About Us</h1>
-      <div style={{width: "68rem", marginLeft: "3.5rem"}}>
+      <div className="about">
       <p>
         Welcome to Gatundia Concrete Limited, your premier partner in
         construction solutions since 2021. Situated in the heart of Gatundia,
@@ -40,6 +41,7 @@ function About() {
         endeavor.
       </p>
       </div>
+      <Footer />
     </div>
   );
 }

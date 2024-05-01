@@ -19,7 +19,7 @@ function Footer() {
       }}
       >
         <a href="tel: +254721953823">
-          <i className="fa-solid fa-phone" style={{ paddingLeft: "1rem" }}></i>
+          <i className="fa-solid fa-phone fa-lg" style={{ paddingLeft: "1rem" }}></i>
         </a>
         <a
           href="https://www.facebook.com/profile.php?id=100072124434733&mibextid=ZbWKwL"
@@ -27,13 +27,13 @@ function Footer() {
           rel="noreferrer"
         >
           <i
-            className="fa-brands fa-facebook"
+            className="fa-brands fa-facebook fa-lg"
             style={{ paddingLeft: "1rem" }}
           ></i>
         </a>
         <a href="mailto:Gatundiaconcretelimited@gmail.com" target="_blank" rel="noreferrer">
           <i
-            className="fa-regular fa-envelope"
+            className="fa-regular fa-envelope fa-lg"
             style={{ paddingLeft: "1rem" }}
           ></i>
         </a>
@@ -42,7 +42,7 @@ function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <i className="fa-brands fa-whatsapp" style={{ paddingLeft: "1rem" }}>
+          <i className="fa-brands fa-whatsapp fa-lg" style={{ paddingLeft: "1rem" }}>
           </i>
         </a>
       </div>

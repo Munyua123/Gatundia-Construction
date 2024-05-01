@@ -6,8 +6,9 @@ import Partners from "./Partners";
 function Home() {
   return (
     <div>
-      <Carousels />
-      <div style={{width: "68rem", marginLeft: "3.5rem"}}>
+      <h1 style={{textAlign: "center"}}>GATUNDIA CONCRETE LIMITED</h1>
+      {/* <Carousels /> */}
+      <div className="home">
       <p>
         Discover the strength beneath your projects with Gatundia Concrete, your
         trusted partner in quality concrete solutions. Nestled in the heart of

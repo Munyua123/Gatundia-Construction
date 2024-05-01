@@ -44,6 +44,22 @@
   .last{
     margin-left: 14rem;
   }
+  .contacts{
+    display: flex;
+    justify-content: space-between;
+  }
+  .contactform{
+    margin-left: 5rem;
+  }
+  .contactinfo{
+    margin-top: 10rem;
+    margin-right: 10rem;
+    width: 28rem;
+  }
+  .home, .about{
+    width: 68rem;
+    margin-left: 3rem;
+  }
 }
 
 .products {
