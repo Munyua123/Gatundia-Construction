@@ -5,6 +5,9 @@ function About() {
   return (
     <div>
       <h1 style={{ textAlign: "center" }}>About Us</h1>
+      {/* <div style={{padding: "2rem"}}>
+        <img src="./assets/2024-05-01 (1).png" alt="company logo" className="mx-auto d-block" />
+      </div> */}
       <div className="about">
       <p>
         Welcome to Gatundia Concrete Limited, your premier partner in

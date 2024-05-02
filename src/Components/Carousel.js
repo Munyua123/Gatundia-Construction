@@ -7,56 +7,61 @@ function Carousels() {
       id="carouselExampleInterval"
       className="carousel slide"
       data-bs-ride="carousel"
-      style={{ marginBottom: "1rem" }}
     >
-      <div className="carousel-inner" style={{width: "800px", margin: "0 auto"}}>
-        <div className="carousel-item active" data-bs-interval="3000">
-          <img
-            src="./assets/gatundia.png"
-            className="d-block w-100"
-            alt="..."
-          />
+      <div className="carousel-inner">
+        <div
+          style={{
+            backgroundImage: `url(https://scontent-mba1-1.xx.fbcdn.net/v/t39.30808-6/438716647_443441304736680_365991497700398842_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=6bOfe4kocAsQ7kNvgFSLwxd&_nc_ht=scontent-mba1-1.xx&oh=00_AfCT-P0yHoaCFaWKznQdBtllf4EsydXjaECSWY0NJrKJqw&oe=663850C4)`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            width: "100%",
+            height: "100vh",
+          }}
+          data-bs-interval="10000"
+          className="carousel-item active"
+        >
+          <h1 className="products">WELCOME TO OUR HOME</h1>
         </div>
-        <div className="carousel-item" data-bs-interval="2000">
-          <img
-            src="./assets/truckimage1.jpg"
-            className="d-block w-100"
-            alt="..."
-          />
+        <div
+          style={{
+            backgroundImage: `url(https://scontent-mba1-1.xx.fbcdn.net/v/t39.30808-6/438716647_443441304736680_365991497700398842_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=6bOfe4kocAsQ7kNvgFSLwxd&_nc_ht=scontent-mba1-1.xx&oh=00_AfCT-P0yHoaCFaWKznQdBtllf4EsydXjaECSWY0NJrKJqw&oe=663850C4)`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            width: "100%",
+            height: "100vh",
+          }}
+          data-bs-interval="2000"
+          className="carousel-item active"
+        >
+          <h1 className="products">WELCOME TO Gatundia</h1>
         </div>
-        <div className="carousel-item" data-bs-interval="2000">
-          <img
-            src="./assets/projects2.jpg"
-            className="d-block w-100"
-            alt="..."
-          />
-        </div>
-        <div className="carousel-item" data-bs-interval="2000">
-          <img
-            src="./assets/project3.jpg"
-            className="d-block w-100"
-            alt="..."
-          />
-        </div>
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
-      <button
-        className="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev"
-      >
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button
-        className="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next"
-      >
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
-      </button>
     </div>
   );
 }
