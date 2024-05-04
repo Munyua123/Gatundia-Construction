@@ -39,10 +39,10 @@
 
 @media (min-width: 1200px) {
   .middle {
-    margin-left: 12rem;
+    margin-left: 22rem;
   }
   .last{
-    margin-left: 14rem;
+    margin-right: 5rem;
   }
   .contacts{
     display: flex;
@@ -67,4 +67,7 @@
   justify-content: center;
   align-items: center; 
   height: 100vh;
+}
+.icons{
+  margin-top: 2rem;
 }

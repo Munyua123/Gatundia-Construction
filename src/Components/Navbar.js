@@ -9,9 +9,9 @@ function Navbar() {
       style={{ marginBottom: "1rem", backgroundColor: "black" }}
     >
       <div className="container-fluid">
-        <NavLink to="/" className="navbar-brand">
+        {/* <NavLink to="/" className="navbar-brand">
           GATUNDIA CONCRETE
-        </NavLink>
+        </NavLink> */}
         <button
           className="navbar-toggler"
           type="button"
@@ -55,17 +55,6 @@ function Navbar() {
                 <NavLink to="/contacts" className="nav-link">
                   Contact Us
                 </NavLink>
-              </li>
-            </ul>
-          </div>
-          <div className="last">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <button type="button" className="btn btn-success">
-                  <a href="tel: +254721953823" target="_blank" rel="noreferrer" className="nav-link">
-                    Call Us
-                  </a>
-                </button>
               </li>
             </ul>
           </div>

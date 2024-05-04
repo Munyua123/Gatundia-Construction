@@ -6,7 +6,6 @@ import Partners from "./Partners";
 function Home() {
   return (
     <div>
-      <h1 style={{ textAlign: "center" }}>GATUNDIA CONCRETE LIMITED</h1>
       <Carousels />
       <div className="home">
         <p>
@@ -29,8 +28,7 @@ function Home() {
           Gatundia Concrete is your foundation for success. Build with
           confidence. Build with Gatundia Concrete.
         </p>
-        {/* it will have a small about us  */}
-        {/* <Partners /> */}
+        <h2 style={{textAlign: "center"}}>Our Services</h2>
       </div>
       <Footer />
     </div>
