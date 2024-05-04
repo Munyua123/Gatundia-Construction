@@ -10,6 +10,7 @@ import About from "./Components/About";
 import Email from "./Components/Email";
 import Copyright from "./Components/Copyright";
 import { useState, useEffect } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -42,6 +43,7 @@ function App() {
         <Route path="/about" element={<About />} />
       </Routes>
       <Copyright />
+      <SpeedInsights />
     </div>
   );
 }
