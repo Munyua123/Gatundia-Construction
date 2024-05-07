@@ -9,9 +9,15 @@ function Navbar() {
       style={{ marginBottom: "1rem", backgroundColor: "black" }}
     >
       <div className="container-fluid">
-        {/* <NavLink to="/" className="navbar-brand">
-          GATUNDIA CONCRETE
-        </NavLink> */}
+        <NavLink to="/" className="navbar-brand">
+          <img
+            src="./assets/2024-05-01 (1).png"
+            alt="Logo"
+            width="250"
+            height="60"
+            className="d-inline-block align-text-top"
+          />
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"

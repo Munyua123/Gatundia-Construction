@@ -20,11 +20,11 @@ function Footer() {
           className="d-inline-block align-text-top"
         />
       </div>
-      <div className="icons">
+      <div className="faq">
         <Link to="/contacts">
-        <button className="btn btn-primary" style={{ marginLeft: "1rem" }}>
-          Contact Us
-        </button>
+          <button className="btn btn-primary">
+            Contact Us
+          </button>
         </Link>
         <button className="btn btn-success">Frequently Asked Questions</button>
       </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import Carousels from "./Carousel";
 import Footer from "./Footer";
-import Partners from "./Partners";
 
 function Home() {
   return (
