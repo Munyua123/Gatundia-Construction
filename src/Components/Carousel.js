@@ -1,84 +1,59 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-// It will contain a fetch GET that will display the pictures from the db.json
 function Carousels() {
+  const settings = {
+    infinite: true,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    lazyLoad: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    fade: true,
+  };
   return (
     <div
-      id="carouselExampleInterval"
-      className="carousel slide"
-      data-bs-ride="carousel"
-      style={{marginBottom: "2rem"}}
+      style={{ marginBottom: "2rem", width: "94%" }}
+      className="mx-auto d-block"
     >
-      <div className="carousel-inner">
-        <div
-          style={{
-            backgroundImage: `url(/assets/pexels-quang-nguyen-vinh-222549-2138126.jpg)`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            width: "100%",
-            height: "100vh",
-          }}
-          data-bs-interval="10000"
-          className="carousel-item active"
-        >
-          <h1 className="products">WELCOME TO OUR HOME</h1>
-        </div>
-        <div
-          style={{
-            backgroundImage: `url(/assets/pexels-kawserhamid-176342.jpg)`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            width: "100%",
-            height: "100vh",
-          }}
-          data-bs-interval="2000"
-          className="carousel-item active"
-        >
-          <h1 className="products">WELCOME TO Gatundia</h1>
-        </div>
-        <div
-          style={{
-            backgroundImage: `url(/assets/pexels-jimbear-1402923.jpg)`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            width: "100%",
-            height: "100vh",
-          }}
-          data-bs-interval="2000"
-          className="carousel-item active"
-        >
-          <h1 className="products">WELCOME TO Gatundia</h1>
-        </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
+      <Slider {...settings}>
+        {introduction.map((item, index) => (
+          <div key={index}>
+            <div
+              style={{
+                backgroundImage: `url(${item.image})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                width: "100%",
+                height: "100vh",
+              }}
+            >
+              <h1 className="products">{item.message}</h1>
+            </div>
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 }
+
+const introduction = [
+  {
+    image: "/assets/pexels-quang-nguyen-vinh-222549-2138126.jpg",
+    message: "GATUNDIA CONCRETE",
+  },
+  {
+    image: "/assets/pexels-kawserhamid-176342.jpg",
+    message: "Top services",
+  },
+  {
+    image: "/assets/pexels-jimbear-1402923.jpg",
+    message: "Gatundia",
+  },
+];
 
 export default Carousels;

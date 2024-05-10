@@ -99,6 +99,9 @@
     width: 23rem;
     border: solid 2px;
   }
+  .contactform{
+    margin-left: 2rem;
+  }
 }
 
 .products {
