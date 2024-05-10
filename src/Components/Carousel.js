@@ -7,11 +7,12 @@ function Carousels() {
       id="carouselExampleInterval"
       className="carousel slide"
       data-bs-ride="carousel"
+      style={{marginBottom: "2rem"}}
     >
       <div className="carousel-inner">
         <div
           style={{
-            backgroundImage: `url(https://scontent-mba1-1.xx.fbcdn.net/v/t39.30808-6/438716647_443441304736680_365991497700398842_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=6bOfe4kocAsQ7kNvgFSLwxd&_nc_ht=scontent-mba1-1.xx&oh=00_AfCT-P0yHoaCFaWKznQdBtllf4EsydXjaECSWY0NJrKJqw&oe=663850C4)`,
+            backgroundImage: `url(/assets/pexels-quang-nguyen-vinh-222549-2138126.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
@@ -25,7 +26,21 @@ function Carousels() {
         </div>
         <div
           style={{
-            backgroundImage: `url(https://scontent-mba1-1.xx.fbcdn.net/v/t39.30808-6/438716647_443441304736680_365991497700398842_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=6bOfe4kocAsQ7kNvgFSLwxd&_nc_ht=scontent-mba1-1.xx&oh=00_AfCT-P0yHoaCFaWKznQdBtllf4EsydXjaECSWY0NJrKJqw&oe=663850C4)`,
+            backgroundImage: `url(/assets/pexels-kawserhamid-176342.jpg)`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            width: "100%",
+            height: "100vh",
+          }}
+          data-bs-interval="2000"
+          className="carousel-item active"
+        >
+          <h1 className="products">WELCOME TO Gatundia</h1>
+        </div>
+        <div
+          style={{
+            backgroundImage: `url(/assets/pexels-jimbear-1402923.jpg)`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",

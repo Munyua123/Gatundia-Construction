@@ -8,44 +8,45 @@ import Products from "./Components/Products";
 import Contact from "./Components/Contact";
 import About from "./Components/About";
 import Email from "./Components/Email";
-import Copyright from "./Components/Copyright";
+import Preloader from "./Components/Preloader";
 import { useState, useEffect } from "react";
-import { SpeedInsights } from "@vercel/speed-insights/react"
-import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [loading, setLoading] = useState(true);
   const [productData, setProductData] = useState([]);
+
   useEffect(() => {
-    fetch("http://localhost:5000/products")
-      .then((res) => res.json())
-      .then((data) => {
-        setProductData(data)
-        setLoading(false)
-      })
-      .catch((error) => {
-        console.error(error)
-        setLoading(false)
-      })
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
   }, []);
+
   return (
     <div
       style={{
         fontFamily: "Lora, serif",
       }}
     >
-      <Email />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/products" element={<Products product={productData} loading={loading} />} />
-        <Route path="/contacts" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-      <Copyright />
-      <SpeedInsights />
-      <Analytics />
+      {loading ? (
+        <Preloader />
+      ) : (
+        <>
+          <Email />
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/contacts" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+          <SpeedInsights />
+          <Analytics />
+        </>
+      )}
     </div>
   );
 }

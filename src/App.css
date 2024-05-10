@@ -41,75 +41,145 @@
   .middle {
     margin-left: 22rem;
   }
-  .last{
+  .last {
     margin-right: 5rem;
   }
-  .contacts{
+  .contacts {
     display: flex;
     justify-content: space-between;
   }
-  .contactform{
+  .contactform {
     margin-left: 5rem;
   }
-  .contactinfo{
+  .contactinfo {
     margin-top: 10rem;
     margin-right: 10rem;
     width: 28rem;
   }
-  .home, .about{
+  .home,
+  .about {
     width: 68rem;
     margin-left: 3rem;
   }
-  .faq button{
+  .faq button {
     margin-right: 2rem;
     margin-top: 1rem;
   }
-  .icons{
+  .icons {
     margin-top: 1rem;
     color: black;
+  }
+  .abouthome{
+    width: 30rem;
+    margin-right: 8rem;
   }
 }
 
 @media (min-width: 768px) {
-  .faq button{
+  .faq button {
     margin-right: 2rem;
     margin-top: 1rem;
   }
-  .icons{
+  .icons {
     margin-top: 1rem;
     color: black;
   }
 }
 
 @media (max-width: 576px) {
-  .faq button{
+  .faq button {
     margin-top: 1rem;
-
   }
 
-  .icons{
-
+  .icons {
     margin-top: 1rem;
+  }
+  .services{
+    overflow: hidden;
+    width: 23rem;
+    border: solid 2px;
   }
 }
-
 
 .products {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   height: 100vh;
 }
 
-.email a{
+.email a {
   color: black;
   transition: 300ms;
 }
 
-.email a:hover{
+.email a:hover {
   color: white;
 }
 
-.email i{
+.email i {
   margin-right: 1rem;
+}
+
+.about p{
+  text-align: justify;
+}
+.description {
+  overflow: hidden;
+  height: 70px; 
+}
+.cards{
+  padding: 0 10px 0 10px;
+}
+.loader {
+  width: 8vmax;
+  height: 8vmax;
+  border-right: 4px solid #ffffff;
+  border-radius: 100%;
+  animation: spinRight 800ms linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  &:before,
+  &:after {
+    content: "";
+    width: 6vmax;
+    height: 6vmax;
+    display: block;
+    position: absolute;
+    top: calc(50% - 3vmax);
+    left: calc(50% - 3vmax);
+    border-left: 3px solid #ffffff;
+    border-radius: 100%;
+    animation: spinLeft 800ms linear infinite;
+  }
+
+  &:after {
+    width: 4vmax;
+    height: 4vmax;
+    top: calc(50% - 2vmax);
+    left: calc(50% - 2vmax);
+    border: 0;
+    border-right: 2px solid #ffffff;
+    animation: none;
+  }
+}
+
+@keyframes spinLeft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes spinRight {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
