@@ -16,8 +16,8 @@ function Carousels() {
   };
   return (
     <div
-      style={{ marginBottom: "2rem", width: "94%" }}
-      className="mx-auto d-block"
+      style={{ marginBottom: "2rem"}}
+      className="carousels mx-auto d-block"
     >
       <Slider {...settings}>
         {introduction.map((item, index) => (

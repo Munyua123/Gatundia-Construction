@@ -73,6 +73,9 @@
     width: 30rem;
     margin-right: 8rem;
   }
+  .carousels{
+    width: 95%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -101,6 +104,9 @@
   }
   .contactform{
     margin-left: 2rem;
+  }
+  .carousels{
+    width: 84.5%;
   }
 }
 

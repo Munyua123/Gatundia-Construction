@@ -2,6 +2,7 @@ import React from "react";
 import Carousels from "./Carousel";
 import Footer from "./Footer";
 import Service from "./Services";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -31,27 +32,36 @@ function Home() {
       </div>
       <h2 style={{ textAlign: "center" }}>About Us</h2>
       <div
-        className="contacts"
-        style={{ border: "solid 1px", padding: "2rem" }}
+        style={{
+          border: "solid 1px",
+          padding: "2rem",
+        }}
       >
-        <img
-          src="/assets/gatundia.png"
-          className="img-thumbnail"
-          alt="..."
-          width="300rem"
-        />
-        <p
-          className="abouthome"
-          style={{marginTop: "1rem" }}
-          align="justify"
-        >
-          Welcome to Gatundia Concrete Limited, your premier partner in
-          construction solutions since 2021.we specialize in the production of
-          ready-mix concrete, providing a reliable foundation for projects of
-          all scales. Whether you're constructing a residential building, a
-          commercial complex, or infrastructure projects like roads, our
-          high-quality concrete ensures durability and strength.
-        </p>
+        <div className="contacts">
+          <img
+            src="/assets/gatundia.png"
+            className="img-thumbnail"
+            alt="..."
+            width="300rem"
+          />
+          <p
+            className="abouthome"
+            style={{ marginTop: "1rem" }}
+            align="justify"
+          >
+            Welcome to Gatundia Concrete Limited, your premier partner in
+            construction solutions since 2021.we specialize in the production of
+            ready-mix concrete, providing a reliable foundation for projects of
+            all scales. Whether you're constructing a residential building, a
+            commercial complex, or infrastructure projects like roads, our
+            high-quality concrete ensures durability and strength.
+          </p>
+        </div>
+        <button className="btn btn-primary mx-auto d-block">
+          <Link to="/about" style={{ textDecoration: "none", color: "white" }}>
+            About Us
+          </Link>
+        </button>
       </div>
       <h2 style={{ textAlign: "center" }}>Our Services</h2>
       <div className="services">
