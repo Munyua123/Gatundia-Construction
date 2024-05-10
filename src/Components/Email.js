@@ -10,21 +10,21 @@ function Email() {
               href="mailto:Gatundiaconcretelimited@gmail.com"
               target="_blank"
               rel="noreferrer"
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: "none"}}
             >
               <i className="fa-solid fa-envelope fa-xl"></i>
               Gatundiaconcretelimited@gmail.com
             </a>
           </div>
           <div style={{ color: "black" }} className="last">
-            <button type="button" className="btn btn-warning">
+            <button type="button" className="btn btn-success">
               <a
                 href="tel: 0721953823"
                 target="_blank"
                 rel="noreferrer"
                 className="nav-link"
               >
-                Call Us
+                Request A Quote
               </a>
             </button>
           </div>

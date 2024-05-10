@@ -65,9 +65,11 @@
     margin-right: 2rem;
     margin-top: 1rem;
   }
-  .icons {
-    margin-top: 1rem;
-    color: black;
+  .icons, i{
+    color: #ffffff;
+  }
+  .icons, i:hover {
+    color: green;
   }
   .abouthome{
     width: 30rem;
@@ -85,7 +87,6 @@
   }
   .icons {
     margin-top: 1rem;
-    color: black;
   }
 }
 

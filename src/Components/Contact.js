@@ -103,15 +103,22 @@ function Contact() {
         <div
           style={{
             border: "2px solid",
-            width: "23rem",
+            width: "24rem",
             height: "14rem",
-            padding: "2rem",
+            padding: "1rem",
           }}
           className="contactinfo"
         >
-          <p>Telephone: +254721953823</p>
-          <p>Email: Gatundiaconcretelimited@gmail.com</p>
           <p>
+            <i className="fa-solid fa-phone fa-lg"></i>
+            Telephone: +254721953823
+          </p>
+          <p>
+            <i className="fa-regular fa-envelope fa-lg"></i>
+            Email: Gatundiaconcretelimited@gmail.com
+          </p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
             Location: Off Nyahururu-Rumuruti Road,just past Gatundia shopping
             centre, Rumuruti
           </p>

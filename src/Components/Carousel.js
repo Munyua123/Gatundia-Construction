@@ -16,7 +16,7 @@ function Carousels() {
   };
   return (
     <div
-      style={{ marginBottom: "2rem"}}
+      style={{ marginBottom: "2rem", backgroundColor: "black"}}
       className="carousels mx-auto d-block"
     >
       <Slider {...settings}>
