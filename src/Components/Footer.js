@@ -25,9 +25,11 @@ function Footer() {
           <Link to="/contacts">
             <button className="btn btn-primary">Contact Us</button>
           </Link>
+          <Link to="/faq">
           <button className="btn btn-success">
             Frequently Asked Questions
           </button>
+          </Link>
         </div>
         <div className="icons">
           <a href="tel: +254721953823">
@@ -63,6 +65,16 @@ function Footer() {
           >
             <i
               className="fa-brands fa-whatsapp fa-lg"
+              style={{ paddingLeft: "1rem" }}
+            ></i>
+          </a>
+          <a
+            href="https://www.google.com/maps/place/Gatundia+Concrete+Crushing+Plant/@0.2288191,36.4592979,15.79z/data=!4m6!3m5!1s0x1787737f83efce35:0x5de2ebcd74987a12!8m2!3d0.227301!4d36.4627878!16s%2Fg%2F11ll9vc1p2?entry=ttu"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i
+              className="fa-solid fa-location-dot"
               style={{ paddingLeft: "1rem" }}
             ></i>
           </a>

@@ -102,30 +102,38 @@ function Contact() {
         </div>
         <div
           style={{
-            border: "2px solid",
-            width: "24rem",
+            width: "21rem",
             height: "14rem",
             padding: "1rem",
           }}
           className="contactinfo"
         >
           <p>
-            <i className="fa-solid fa-phone fa-lg"></i>
-            Telephone: +254721953823
+            <i
+              className="fa-solid fa-phone fa-lg"
+              style={{ paddingRight: "1rem" }}
+            ></i>
+            +254721953823
           </p>
           <p>
-            <i className="fa-regular fa-envelope fa-lg"></i>
-            Email: Gatundiaconcretelimited@gmail.com
+            <i
+              className="fa-regular fa-envelope fa-lg"
+              style={{ paddingRight: "1rem" }}
+            ></i>
+            Gatundiaconcretelimited@gmail.com
           </p>
           <p>
-            <i class="fa-solid fa-location-dot"></i>
-            Location: Off Nyahururu-Rumuruti Road,just past Gatundia shopping
-            centre, Rumuruti
+            <i
+              className="fa-solid fa-location-dot fa-lg"
+              style={{ paddingRight: "1rem" }}
+            ></i>
+            Off Nyahururu-Rumuruti Road,just past Gatundia shopping centre,
+            Rumuruti
           </p>
         </div>
       </div>
       <div
-        style={{ width: "23rem", height: "16rem", marginTop: "3rem" }}
+        style={{ width: "23rem", height: "16rem" }}
         className="mx-auto d-block"
       >
         <h2 style={{ textAlign: "center" }}>Google Location</h2>

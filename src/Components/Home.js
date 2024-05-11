@@ -33,7 +33,6 @@ function Home() {
       <h2 style={{ textAlign: "center" }}>About Us</h2>
       <div
         style={{
-          border: "solid 1px",
           padding: "2rem",
         }}
       >

@@ -39,7 +39,7 @@
 
 @media (min-width: 1200px) {
   .middle {
-    margin-left: 22rem;
+    margin-left: 26rem;
   }
   .last {
     margin-right: 5rem;
@@ -65,18 +65,27 @@
     margin-right: 2rem;
     margin-top: 1rem;
   }
-  .icons, i{
+  .icons,
+  i {
     color: #ffffff;
+    transition: 200ms;
   }
-  .icons, i:hover {
+  .icons,
+  i:hover {
     color: green;
   }
-  .abouthome{
+  .abouthome {
     width: 30rem;
     margin-right: 8rem;
   }
-  .carousels{
+  .carousels {
     width: 95%;
+  }
+  .img-thumbnail {
+    margin-left: 3rem;
+  }
+  .questions h5{
+    font-weight: bolder;
   }
 }
 
@@ -95,19 +104,39 @@
     margin-top: 1rem;
   }
 
-  .icons {
+  .icons,
+  i {
+    color: #ffffff;
     margin-top: 1rem;
   }
-  .services{
+  .services {
     overflow: hidden;
     width: 23rem;
     border: solid 2px;
   }
-  .contactform{
+  .contactform {
     margin-left: 2rem;
   }
-  .carousels{
+  .carousels {
     width: 84.5%;
+  }
+  .card {
+    margin-left: 4rem;
+  }
+  .contactinfo {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .maps {
+    margin-left: 2rem;
+  }
+  .email {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+  .questions, p{
+    text-align: justify;
   }
 }
 
@@ -117,6 +146,7 @@
   align-items: center;
   height: 100vh;
 }
+
 
 .email a {
   color: black;
@@ -131,14 +161,14 @@
   margin-right: 1rem;
 }
 
-.about p{
+.about p {
   text-align: justify;
 }
 .description {
   overflow: hidden;
-  height: 70px; 
+  height: 70px;
 }
-.cards{
+.cards {
   padding: 0 10px 0 10px;
 }
 .loader {

@@ -6,7 +6,7 @@ function Navbar() {
     <nav
       className="navbar navbar-expand-lg "
       data-bs-theme="dark"
-      style={{ marginBottom: "1rem", backgroundColor: "black" }}
+      style={{ marginBottom: "1rem", backgroundImage: `url(/assets/pexels-slendyalex-3745234.jpg)` }}
     >
       <div className="container-fluid">
         <NavLink to="/" className="navbar-brand">

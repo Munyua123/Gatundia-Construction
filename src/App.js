@@ -8,6 +8,7 @@ import Contact from "./Components/Contact";
 import About from "./Components/About";
 import Email from "./Components/Email";
 import Preloader from "./Components/Preloader";
+import Faq from "./Components/Faq";
 import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
@@ -41,6 +42,7 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/contacts" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/faq" element={<Faq />} />
           </Routes>
           <SpeedInsights />
           <Analytics />
